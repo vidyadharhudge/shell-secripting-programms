@@ -1,10 +1,8 @@
 #!/bin/bash -x
-firstNumber=$((RANDOM%6))
+firstNumber=$((RANDOM%6 +1))
      a=$firstNumber
-secondNumber=$((RANDOM%6))
+secondNumber=$((RANDOM%6 +1))
      b=$secondNumber
-if [ $a -gt 0 ] && [ $b -gt 0 ];
-then
      add=$(( $a + $b ));
      echo $add
-fi
+
