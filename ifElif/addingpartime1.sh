@@ -7,12 +7,12 @@ randomcheck=$((RANDOM%3));
 
 if [ $isfulltime -eq $randomcheck ];
 then
-    emphrs=8;
+      emphrs=8;
 elif [ $ispartime -eq $randomcheck ];
 then
-    emphrs=4;
+      emphrs=4;
 else
-  emphrs=0;
+      emphrs=0;
 fi
 
 salary=$(($emphrs*$emprateperhour));
