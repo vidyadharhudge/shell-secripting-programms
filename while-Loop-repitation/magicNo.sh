@@ -8,15 +8,15 @@ do
 	read -p "if your number is  lesser than $mid press 1,if your number is grater than $mid press 2,otherwise press 3" ans
 	if [[ $ans == 3 ]];
   	then
-  		echo "your no is $mid"
-  		break;
+  		  echo "your no is $mid"
+  	break;
 	elif [[ $ans == 1 ]];
   	then
-   	 high=$((mid-1))
+   	  high=$((mid-1))
 	elif [[ $ans == 2 ]];
   	then
-   	 low=$((mid+1))
-    fi
-		mid=$(( ($low+$high)/2 ))
+   	  low=$((mid+1))
+   fi
+		  mid=$(( ($low+$high)/2 ))
 
 done
